@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>ツリー部品テスト</title>
+<style type="text/css">
+<!--
+.body { background-color: black; }
+.tree { opacity: 0.3; background-color: #333333;}
+.tree div { line-height: 100%; color: #FFFFFF;}
+.tree a { text-decoration: none; color: #FFFFFF; }
+.tree a:hover { color: red; }
+-->
+</style>
+<script type="text/javascript">
+<!--
+function init() {
+  if (!document.getElementsByTagName) { return; }
+  var objs = document.getElementsByTagName("div");
+  for (i = 0; i < objs.length; i++) {
+    if (objs[i].className == "titem") {
+      objs[i].style.display = "none";
+    }
+  }
+}
+function func(id) {
+  if (!document.getElementsByTagName) { return false; }
+  var obj = document.getElementById(id);
+  if (obj.style.display == "block") {
+    obj.style.display = "none";
+  } else {
+    obj.style.display = "block";
+  }
+  return false;
+}
+// -->
+</script>
+</head>
+<body onload="init()" class="body">
+<div class="tree">
+ <div><a href="#" onclick="return func('html')">□HTML入門</a></div>
+ <div class="titem" id="html">
+  <div>├<a href="#" onclick="return func('html_font')">□フォント</a></div>
+  <div class="titem" id="html_font">
+   <div>│├<a href="../html/font.htm">□font</a></div>
+   <div>│├<a href="../html/b.htm">□b</a></div>
+   <div>│└<a href="../html/i.htm">□i</a></div>
+  </div>
+  <div>├<a href="#" onclick="return func('html_list')">□リスト</a></div>
+  <div class="titem" id="html_list">
+   <div>│├<a href="../html/li.htm">□li</a></div>
+   <div>│├<a href="../html/ol.htm">□ol</a></div>
+   <div>│└<a href="../html/ul.htm">□ul</a></div>
+  </div>
+  <div>├<a href="table.htm">□テーブル</a></div>
+  <div>└<a href="form.htm">□フォーム</a></div>
+ </div>
+ <div><a href="#" onclick="return func('js')">□JavaScript入門</a></div>
+ <div class="titem" id="js">
+  <div>├<a href="../js/number.htm">□数値</a></div>
+  <div>├<a href="../js/string.htm">□文字列</a></div>
+  <div>├<a href="../js/array.htm">□配列</a></div>
+  <div>└<a href="../js/date.htm">□日付</a></div>
+ </div>
+</div>
+</body>
+</html>

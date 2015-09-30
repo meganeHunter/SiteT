@@ -9,7 +9,37 @@
   <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
   <link rel="stylesheet" href="stylesheets/pygment_trac.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
+  <script type="text/javascript" >
+    function init() 
+    {
+      if (!document.getElementsByTagName) { return; }
+      var objs = document.getElementsByTagName("div");
+      for (i = 0; i < objs.length; i++) 
+      {
+        if (objs[i].className == "titem")
+         {
+            objs[i].style.display = "none";
+         }
+      }
+    }
+    
+    function func(id)
+    {
+      if (!document.getElementsByTagName) { return false; }
+      var obj = document.getElementById(id);
+      if (obj.style.display == "block") 
+      {
+        obj.style.display = "none";
+      }
+      else
+      {
+        obj.style.display = "block";
+      }
+      
+      return false;
+    }
+
+  </script>
 
   <title>SiteT</title>
   
@@ -21,17 +51,50 @@
 
 <style type="text/css">
 <!--
-body {
+body 
+{
   background-color: black;
   background-image: url(./images/sm5v.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
 }
+
+.tree
+ { opacity: 0.3; background-color: #333333; }
+.tree div { line-height: 100%; color: #FFFFFF; }
+.tree a { text-decoration: none; color: #FFFFFF; }
+.tree a:hover { color: red; }
+
 -->
 </style>
-<body>
-  
+<body onload="init()" class="body">
+<div class="tree">
+ <div><a href="#" onclick="return func('html')">□紹介</a></div>
+ <div class="titem" id="html">
+  <div>├<a href="#" onclick="return func('html_font')">□名前</a></div>
+  <div class="titem" id="html_font">
+   <div>│├<a href="">□生年</a></div>
+   <div>│├<a href="">□経歴</a></div>
+   <div>│└<a href="">□</a></div>
+  </div>
+  <div>├<a href="#" onclick="return func('html_list')">□作品</a></div>
+  <div class="titem" id="html_list">
+   <div>│├<a href="">□壱</a></div>
+   <div>│├<a href="">□弐</a></div>
+   <div>│└<a href="">□参</a></div>
+  </div>
+  <div>├<a href="table.htm">□</a></div>
+  <div>└<a href="form.htm">□</a></div>
+ </div>
+ <div><a href="#" onclick="return func('js')">□JavaScript入門</a></div>
+ <div class="titem" id="js">
+  <div>├<a href="">□</a></div>
+  <div>├<a href="">□</a></div>
+  <div>├<a href="">□</a></div>
+  <div>└<a href="">□</a></div>
+ </div>
+</div>
 </body>
   
 
