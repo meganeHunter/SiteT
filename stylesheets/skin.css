@@ -1,0 +1,290 @@
+.body
+{
+  color: white;
+  background-color: #160000;
+}
+        
+.vertMain
+{
+  width: 100%;
+  height: 90%;
+  writing-mode: vertical-rl;
+  direction: ltr;
+  font-family: "国鉄っぽいフォント（正体）"; 
+  font-size: 35px;
+  color: white;
+  background-color: #160000;
+ }
+
+.vertFrm
+{
+  width: 100%;
+  height: 95%;
+  writing-mode: vertical-rl;
+  direction: ltr;
+  font-family: "国鉄っぽいフォント（正体）"; 
+  font-size: 35px;
+  color: white;
+  background-color: #160000;
+}
+
+.vhed
+{
+  font-size: 40%;
+  font-weight: 900;
+}
+
+.lnk
+{
+  color: white;
+  writing-mode: vertical-rl;
+  font-family: "国鉄っぽいフォント（正体）"; 
+  //font-size: 58px;
+  text-decoration: none;
+}
+
+.frm
+{
+  width: 100%;
+  height: 100%;
+  border-style: none;
+}
+
+.ccl
+{
+    border-style: none;
+    color: white;
+    writing-mode: vertical-rl;
+    font-family: "国鉄っぽいフォント（正体）"; 
+    font-size: 10px;
+    text-decoration: none;
+    position: absolute;
+    top: 5%;
+    left: 1%;
+}
+
+.cclLink
+{
+    border-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+
+.mNameJ
+{
+  color: white;
+  writing-mode: vertical-rl;
+  font-family: "国鉄っぽいフォント（正体）"; 
+  font-size: 48px;
+  text-decoration: none;
+}
+
+.mNameE
+{
+  color: white;
+  writing-mode: vertical-rl;
+  font-family: "国鉄っぽいフォント（正体）"; 
+  font-size: 38px;
+  text-decoration: none;
+}
+
+.mTitle
+{
+  color: white;
+  writing-mode: vertical-rl;
+  font-family: "国鉄っぽいフォント（正体）"; 
+  font-size: 38px;
+  text-decoration: none;
+}
+
+.wrkTitleJ
+{
+  color: white;
+  writing-mode: vertical-rl;
+  font-family: "国鉄っぽいフォント（正体）"; 
+  font-size: 48px;
+  text-decoration: none;
+  position: relative;
+  top: 0%;
+
+}
+
+.wrkTitleE
+{
+  color: white;
+  writing-mode: vertical-rl;
+  font-family: "国鉄っぽいフォント（正体）"; 
+  font-size: 26px;
+  text-decoration: none;
+  position: relative;
+  top: 5%;
+}
+
+.wrkDet
+{
+  color: white;
+  writing-mode: vertical-rl;
+  font-family: "国鉄っぽいフォント（正体）"; 
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.tb4wrk
+{
+    border: 0;
+    position: relative;
+    writing-mode: vertical-rl;
+}
+
+.tbWL
+{
+    border: 0;
+    position: relative;
+    writing-mode: vertical-rl;
+}
+
+.img0
+{
+    position: relative;
+    top: 0%;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height:105%;
+}
+
+.img1
+{
+  position: absolute;
+  top: 10%;
+  left: 35%;
+}
+
+.img2
+{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.img3
+{
+    position: relative;
+    top: 0%;
+    left: 70%;
+    right: 30%;
+    width: 400px;
+    height: 535px;
+
+}
+
+.imgRB
+{  
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: 5%;
+    height: 9%;
+}
+
+.imgWL
+{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 240px;
+    height: 180px;
+}
+
+.mov0
+{
+  position: relative;
+  top: 0%;
+  left: 0%;
+  width: 400px;
+  height: 260px;
+}
+
+.vid1
+{
+  position: relative;
+  width: 50%;
+  height: 40%;
+}
+
+.vid2
+{
+  position: relative;
+  width: 50%;
+  height: 40%;
+}
+
+.mov1
+{
+  position: relative;
+  overflow: hidden;
+  top: 0%;
+  right: 0%;
+}
+
+.mov1Cap
+{
+  writing-mode: vertical-rl;
+  direction: ltr;
+  font-family: "国鉄っぽいフォント（正体）"; 
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  
+	top: 10%;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.3);
+	-webkit-transition: .3s;
+	transition: .3s;
+	opacity: 0;
+}
+
+.mov1:hover .mov1Cap
+{
+  opacity: 1;
+}
+
+.rB
+{
+  position: relative;
+  overflow: hidden;
+  top: 0%;
+  right: 40%;
+}
+
+.rBCap
+{
+  writing-mode: vertical-rl;
+  direction: ltr;
+  font-family: "国鉄っぽいフォント（正体）"; 
+  font-size: 38px;
+  color: white;
+  position: relative;
+  
+	top: 52%;
+	left: 0%;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	-webkit-transition: .3s;
+	transition: .3s;
+	opacity: 0;
+}
+
+.rB:hover .rBCap
+{
+  opacity: 1;
+}
+
