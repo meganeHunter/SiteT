@@ -2,19 +2,23 @@
 {
   color: white;
   background-color: #160000;
+  //width: 100%;
+  //height: 100%;
 }
-        
+
 .vertMain
 {
+  display: block;
+  margin: auto;
   width: 100%;
   height: 90%;
   writing-mode: vertical-rl;
   writing-mode: tb-rl;
- -moz-writing-mode: vertical-rl;
- -o-writing-mode: vertical-rl;
- -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -o-writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
   direction: ltr;
-  font-family: "国鉄っぽいフォント（正体）"; 
+  font-family: "国鉄っぽいフォント（正体）";
   font-size: 35px;
   color: white;
   background-color: #160000;
@@ -22,15 +26,16 @@
 
 .vertFrm
 {
+  margin: auto 0;
   width: 100%;
-  height: 95%;
+  height: 90%;
   writing-mode: vertical-rl;
   writing-mode: tb-rl;
   -moz-writing-mode: vertical-rl;
- -o-writing-mode: vertical-rl;
- -webkit-writing-mode: vertical-rl;
+  -o-writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
   direction: ltr;
-  font-family: "国鉄っぽいフォント（正体）"; 
+  font-family: "国鉄っぽいフォント（正体）";
   font-size: 35px;
   color: white;
   background-color: #160000;
@@ -45,28 +50,28 @@
 .lnk
 {
   color: white;
-  writing-mode: vertical-rl;
-  font-family: "国鉄っぽいフォント（正体）"; 
+  //writing-mode: vertical-rl;
+  //font-family: "国鉄っぽいフォント（正体）";
   //font-size: 58px;
   text-decoration: none;
 }
 
 .frm
 {
-  width: 1350px;
-  height: 600px;
+  width: 100%;
+  height: 100%;
   border-style: none;
 }
 
 .ccl
 {
     border-style: none;
-    color: white;
-    writing-mode: vertical-rl;
-    writing-mode: tb-rl;
-    font-family: "国鉄っぽいフォント（正体）"; 
+    //color: white;
+    //writing-mode: vertical-rl;
+    //writing-mode: tb-rl;
+    //font-family: "国鉄っぽいフォント（正体）";
     font-size: 10px;
-    text-decoration: none;
+    //text-decoration: none;
     position: absolute;
     top: 5%;
     left: 1%;
@@ -82,27 +87,18 @@
 
 .mNameJ
 {
-  color: white;
-  writing-mode: vertical-rl;
-  font-family: "国鉄っぽいフォント（正体）"; 
   font-size: 48px;
   text-decoration: none;
 }
 
 .mNameE
 {
-  color: white;
-  writing-mode: vertical-rl;
-  font-family: "国鉄っぽいフォント（正体）"; 
   font-size: 38px;
   text-decoration: none;
 }
 
 .mTitle
 {
-  color: white;
-  writing-mode: vertical-rl;
-  font-family: "国鉄っぽいフォント（正体）"; 
   font-size: 38px;
   text-decoration: none;
 }
@@ -110,20 +106,16 @@
 .wrkTitleJ
 {
   color: white;
-  writing-mode: vertical-rl;
-  font-family: "国鉄っぽいフォント（正体）"; 
   font-size: 48px;
   text-decoration: none;
   position: relative;
   top: 0%;
+  right: 0%;
 
 }
 
 .wrkTitleE
 {
-  color: white;
-  writing-mode: vertical-rl;
-  font-family: "国鉄っぽいフォント（正体）"; 
   font-size: 26px;
   text-decoration: none;
   position: relative;
@@ -132,9 +124,6 @@
 
 .wrkDet
 {
-  color: white;
-  writing-mode: vertical-rl;
-  font-family: "国鉄っぽいフォント（正体）"; 
   font-size: 24px;
   text-decoration: none;
 }
@@ -143,15 +132,16 @@
 {
     border: 0;
     position: relative;
-    writing-mode: vertical-rl;
 }
 
 .tbWL
 {
+    display: block;
     border: 0;
     position: relative;
+    right: 0%;
      writing-mode: vertical-rl;
-    writing-mode: tb-rl;
+     writing-mode: tb-rl;
      -moz-writing-mode: vertical-rl;
      -o-writing-mode: vertical-rl;
      -webkit-writing-mode: vertical-rl;
@@ -169,13 +159,12 @@
 
 .img1
 {
-  position: absolute;
-/*   top: 10%;
-  left: 35%; */
-    margin-top: 5%;
-    margin-right: 30%;
-    margin-bottom: 20%;
-    margin-left: 30%;
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-left: 30%;
+  margin-right: 70%;
+
 }
 
 .img2
@@ -183,8 +172,8 @@
     position: relative;
     top: 0%;
     left: 0%;
-    width: 460px;
-    height: 570px;
+    width: 400px;
+    height: 260px;
 }
 
 .img3
@@ -199,12 +188,12 @@
 }
 
 .imgRB
-{  
+{
     position: absolute;
     right: 0%;
     bottom: 0%;
     width: 58px;
-    height: 58px;
+    //height: 58px;
 }
 
 .imgWL
@@ -241,28 +230,27 @@
 
 .mov1
 {
-  display: inline;
+  //display: inline;
   position: relative;
   overflow: hidden;
   top: 0%;
   right: 0%;
+  width: 100%;
+  height: 100%;
 }
 
 .mov1Cap
 {
-  display: inline;
-  writing-mode: vertical-rl;
-  direction: ltr;
-  font-family: "国鉄っぽいフォント（正体）"; 
+  //display: inline;
   font-size: 24px;
   color: white;
   position: absolute;
-  
-	top: 10%;
-	left: 0%;
-	z-index: 5;
+
+	top:  auto ;
+	left: auto;;
+	z-index: 2;
 	width: 100%;
-	height: 100%;
+	height: 70%;
 	background: rgba(0,0,0,.3);
 	-webkit-transition: .3s;
 	transition: .3s;
@@ -271,7 +259,7 @@
 
 .mov1:hover .mov1Cap
 {
-  display: inline;
+  //display: inline;
   opacity: 1;
 }
 
@@ -280,24 +268,23 @@
   position: relative;
   overflow: hidden;
   top: 0%;
-  right: 40%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
 }
 
 .rBCap
 {
-  writing-mode: vertical-rl;
-  direction: ltr;
-  font-family: "国鉄っぽいフォント（正体）"; 
   font-size: 38px;
   color: white;
-  position: relative;
-  
-	top: 52%;
+  position: absolute;
+
+	top: 0%;
 	left: 0%;
 	z-index: 2;
-	width: 53px;
-	height: 400px;
-	background: rgba(0,0,0,.5);
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.3);
 	-webkit-transition: .3s;
 	transition: .3s;
 	opacity: 0;
@@ -307,4 +294,3 @@
 {
   opacity: 1;
 }
-
